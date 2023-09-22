@@ -9,6 +9,14 @@ const Sell = new Schema({
         type: Date,
         required: true,
         default: false
+    },
+    employee: {
+        type: Schema.Types.ObjectId,
+        ref: "Employee"
+    },
+    product: {
+        type: Schema.Types.ObjectId,
+        ref: "Product"
     }
 }, {
     timestamps: true

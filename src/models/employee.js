@@ -19,6 +19,10 @@ const Employee = new Schema({
         type: String,
         required: true,
         default: false
+    },
+    role: {
+        type: Schema.Types.ObjectId,
+        ref: "Role"
     }
 }, {
     timestamps: true
